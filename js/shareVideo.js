@@ -1,5 +1,6 @@
 $(function(){ 
-	var eleTop = $(".video_name").outerHeight(true)+$(".act").outerHeight(true)+$(".introduction").outerHeight(true)+$(".Origin").outerHeight(true)+$(".commentBox").outerHeight(true),
+	var myScroll,
+		eleTop = $(".video_name").outerHeight(true)+$(".act").outerHeight(true)+$(".introduction").outerHeight(true)+$(".Origin").outerHeight(true)+$(".commentBox").outerHeight(true),
 		imgH = $("#paly_btn").outerHeight(true),
 		t = 0;
 	myScroll = new iScroll('wrapper',{
