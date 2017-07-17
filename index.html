@@ -1,0 +1,265 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />    
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>视频分享页面</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"><!--  全局样式  -->
+	<link rel="stylesheet" type="text/css" href="css/shareVideo.css"><!--  自定义样式  -->
+	<script>		
+		var docEl = document.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function() {
+		    docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+		};
+		window.addEventListener(resizeEvt, recalc, false);
+		document.addEventListener('DOMContentLoaded', recalc, false);
+	</script>
+</head>
+<body>
+	<div class="video_container fixedVideo" id="video_container">
+		<img id="paly_btn" src="img/banner.jpg" alt="" videourl="http://cfp.caifupad.com/zt/vedio2.mp4" style="opacity: 0">
+		<video class="videoFile" id="videoFile" src="" controls="controls" poster="img/banner.jpg" preload="true" webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+			您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+		</video>
+		<div class="Stop_btn" id="Stop_btn">					
+		</div>
+	</div>
+	<div class="wrapper" id="wrapper"><!-- iscroll -->
+		<div class="scroll">
+			<div class="video_container" id="video_container">
+			</div>
+			<div class="video_name">
+				<h2>末代皇帝选段末代皇帝末代皇帝选段末 代皇帝末代皇帝选段</h2>
+				<p class="ViewingTimes">34W</p>
+			</div>
+			<div class="act">
+				饰演邬君梅
+			</div>
+			<div class="introduction">
+				<p id="brief_btn">简介<span class="brief_btn"></span></p>
+				<p class="type_list">
+					<span>惊悚</span>
+					<span>喜剧</span>
+					<span>动作</span>
+				</p>				
+			</div>
+			<div class="Origin" id="Origin">
+				“我觉得我摊上大事了，说实话我就是一个普普通通的小老百姓，一下子有了个流水300亿的账户，我觉得我很无辜。”说起最近发生在自己身上的事儿，昆明小伙龙先生显得惊慌又无奈。上个月20号，龙先生准备到浦发银行新开账户，办理银行卡时却被告知，自己名下已经有一张余额12万的浦发银行借记卡了，暂时无法办理新卡，这让从来没有在浦发银行开过户的龙先生一头雾水。额12万的浦发银行借记卡了，暂时无法办理新卡，这让从来没有在浦发银行开过户的龙先生一头雾水。
+			</div>
+			<div class="commentBox">
+				<div class="comment" id="comment">
+					3242W
+				</div>
+				<div class="unlikes" id="unlikes"><!--  unlikes此类为点赞  -->
+					37
+				</div>
+			</div>
+			<div class="CommentRelated">
+				<div class="allcomment hotcomment">
+					<h2>热门评论</h2>
+					<dl class="discuss">
+						<dd>
+							<div class="headBox">
+								<img src="img/banner.jpg" alt="">
+							</div>
+						</dd>
+						<dt>
+							<p class="user_info">
+								<span>
+									<i>无厘头</i>
+									<i>6-2 16:00</i>
+								</span>
+								<span class="comment_unlikes">372</span><!--  .comment_likes此类为点赞  -->
+							</p>
+							<p class="content">
+								无厘头无厘头无厘头无厘头无厘头无厘头无厘头无厘 厘头无厘头无厘头.
+							</p>
+							<p class="Reply" id="Reply">
+								<span class="master">@无厘头 </span><span class="Number">共173人回复</span>
+							</p>
+						</dt>
+					</dl>
+					<div class="empty">
+						<div class="imgBox">
+							<img src="img/picture-comment.png" alt="">
+						</div>
+						<p>暂无评论</p>
+					</div>
+				</div>
+				<div class="allcomment">
+					<h2>全部评论</h2>
+					<dl class="discuss">
+						<dd>
+							<div class="headBox">
+								<img src="img/banner.jpg" alt="">
+							</div>
+						</dd>
+						<dt>
+							<p class="user_info">
+								<span>
+									<i>无厘头</i>
+									<i>6-2 16:00</i>
+								</span>
+								<span class="comment_unlikes">372</span><!--  .comment_likes此类为点赞  -->
+							</p>
+							<p class="content">
+								无厘头无厘头无厘头无厘头无厘头无厘头无厘头无厘 厘头无厘头无厘头.
+							</p>
+							<p class="Reply" id="Reply">
+								<span class="master">@无厘头 </span><span class="Number">共173人回复</span>
+							</p>
+						</dt>
+					</dl>
+					<div class="empty">
+						<div class="imgBox">
+							<img src="img/picture-comment.png" alt="">
+						</div>
+						<p>暂无评论</p>
+					</div>
+				</div>
+				<div class="relevant" id="relevant">
+					<h2>相关视频</h2>
+					<dl class="relevant_video" videourl="http://pic.eastartv.com/webUrl1494772980000">
+						<dd>
+							<img src="img/banner.jpg" alt="">
+						</dd>
+						<dt>
+							<p class="in_play">正在播放中...</p>
+							<p class="video_title text-overflow">末代皇帝选段末代皇帝末代皇帝选段末</p>
+							<p class="act_role">饰演邬君梅</p>
+							<p class="Other">
+								<span>34.5W</span>
+								<span>4'56"</span>
+							</p>
+						</dt>
+					</dl>
+					<dl class="relevant_video" videourl="http://pic.eastartv.com/backUrl1492762411000">
+						<dd>
+							<img src="img/banner.jpg" alt="">
+						</dd>
+						<dt>
+							<p class="in_play">正在播放中...</p>
+							<p class="video_title text-overflow">末代皇帝选段末代皇帝末代皇帝选段末</p>
+							<p class="act_role">饰演邬君梅</p>
+							<p class="Other">
+								<span>34.5W</span>
+								<span>4'56"</span>
+							</p>
+						</dt>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="liner"></div>
+			<div class="header">			
+				<div class="head_bg" onclick="location.href=''"><!--  跳转当前头像的链接  -->
+					<div class="HeadPortrait">
+						<img src="img/banner.jpg" alt="">
+					</div>
+				</div>
+				<div class="material">
+					<p class="monicker">徐洁儿/Jill</p>
+					<p class="Occupation">演员 歌手</p>
+				</div>
+				<div class="elookin headelookin" style="position: relative;margin-top: 2rem;">
+					<a href="#">
+						<span class="download" id="download">下载APP看更多</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="elookin" id="elookin">
+		<a href="#">
+			<span class="download" id="download">下载APP看更多</span>
+		</a>
+	</div>
+	<div class="ReviewDetails" id="ReviewDetails"><!-- iscroll -->
+		<div class="scroller">
+			<div class="allcomment" style="display: block;">
+				<h3>回复列表<span class="close" id="close"></span></h3>
+				<dl class="discuss">
+					<dd>
+						<div class="headBox">
+							<img src="img/banner.jpg" alt="">
+						</div>
+					</dd>
+					<dt style="border:none;">
+						<p class="user_info">
+							<span>
+								<i>无厘头</i>
+								<i>6-2 16:00</i>
+							</span>
+							<span class="comment_unlikes">372</span><!--  .comment_likes此类为点赞  -->
+						</p>
+						<p class="content">
+							无厘头无厘头无厘头无厘头无厘头无厘头无厘头无厘 厘头无厘头无厘头.
+						</p>
+					</dt>
+				</dl>
+				<div class="OtherReplies">
+
+					<dl class="discuss">
+						<dd>
+							<div class="headBox">
+								<img src="img/banner.jpg" alt="">
+							</div>
+						</dd>
+						<dt>
+							<p class="user_info">
+								<span>
+									<i>无厘头</i>
+									<i>6-2 16:00</i>
+								</span>
+								<span class="comment_unlikes">372</span><!--  .comment_likes此类为点赞  -->
+							</p>
+							<p class="content">
+								无厘头无厘头无厘头无厘头无厘头无厘头无厘头无厘 厘头无厘头无厘头.
+							</p>
+						</dt>
+					</dl>
+					<dl class="discuss">
+						<dd>
+							<div class="headBox">
+								<img src="img/banner.jpg" alt="">
+							</div>
+						</dd>
+						<dt>
+							<p class="user_info">
+								<span>
+									<i>无厘头</i>
+									<i>6-2 16:00</i>
+								</span>
+								<span class="comment_unlikes">372</span><!--  .comment_likes此类为点赞  -->
+							</p>
+							<p class="content dialogue">
+								回复<span class="Netfriend">@小美工：</span>无厘头无厘头无厘头无厘头无厘头无厘头无厘头无厘 厘头无厘头无厘头.
+							</p>
+							<p class="reversion">
+								<span class="Netfriend">@小美工：</span>前十首，只有一首没听过。。。英文歌听多了就重复就是那些歌，真的很烦。 
+							</p>
+						</dt>
+					</dl>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="WriteReviews" id="WriteReviews">
+		<div class="inputBox">
+			<span></span><input type="text" placeholder="写评论" class="write" id="write" name="write" value="">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="js/shareVideo.js"></script>
+</body>
+</html>

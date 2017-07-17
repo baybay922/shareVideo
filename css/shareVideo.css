@@ -1,0 +1,552 @@
+/*
+    分享页面样式
+*/
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+    font-family: "微软雅黑";
+    color: #333;
+}
+.wrapper{
+    position:absolute;
+    z-index:1;
+    width:100%;
+    height: 100%;  
+}
+.scroll{
+    width:100%;
+    height: auto;
+    padding-bottom: 14rem;
+}
+.ReviewDetails{
+    position:absolute;
+    z-index:999;
+    width:100%;
+    height: 100%;
+    background: #fff; 
+    display: none;
+}
+.scroller{
+    width:100%;
+    height: auto;
+    padding-bottom: 8rem;
+}
+.video_container{
+    width: 100%;
+    height: auto;
+    background: #000;
+    position: relative;
+}
+.video_container img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+}
+.videoFile{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.Stop_btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-size: 5rem 5rem;
+    display: none;
+}
+
+.video_name{
+    width: 90%;
+    height: auto;
+    margin: .5rem auto;
+    position: relative;
+}
+.video_name h2{
+    width: 80%;
+    display: block;
+    color: #000;
+    font-size: 1.2rem;
+}
+.ViewingTimes{
+    width: 18%;
+    position: absolute;
+    right: 0;
+    top: .2rem;
+    color: #999;
+    font-size: .8rem;
+    background: url(../img/eye.png) no-repeat left .3rem;
+    background-size: 1.3rem .8rem;
+    text-indent: 1.5rem;
+}
+.act{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+}
+.introduction{
+    width: 90%;
+    height: auto;
+    margin: .5rem auto;
+    font-size: .8rem;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+.introduction p:nth-child(1){
+    width: 40%;
+    display: -webkit-box;    
+}
+.brief_btn{
+    width: 1rem;
+    height: 1rem;
+    margin-top: .2rem;
+    background: url(../img/intro-dwon.png) no-repeat 80% center;
+    background-size: .8rem .8rem;
+    display: block;
+    overflow: hidden;
+    margin-left: .5rem;
+    -moz-transition: width .8s; /* Firefox 4 */
+    -webkit-transition: width .8s; /* Safari 和 Chrome */
+    -o-transition: width .8s; /* Opera */
+}
+.type_list span{
+    color: #999;
+    margin: 0 .2rem;
+    border: 1px solid #999;
+    border-radius: 10px;padding: .1rem .5rem;
+}
+.commentBox{
+    width: 90%;
+    height: auto;
+    margin: 2rem auto 1rem;
+    border-bottom: 1px solid #ccc;
+    display: -webkit-box;
+    padding-bottom: 1rem;
+}
+.comment{
+    width: 30%;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background: url(../img/comment.png)no-repeat left center;
+    background-size: contain;
+    text-indent: 2.5rem;
+}
+.unlikes{
+    width: 25%;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    background: url(../img/love.png)no-repeat left center;
+    background-size: contain;
+    text-indent: 2.5rem;
+}
+.likes{
+    background: url(../img/click-love.png)no-repeat left center;
+    background-size: contain;
+}
+.liner{
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+
+}
+.relevant{
+    width: 100%;
+    height: auto;
+    padding-bottom:1rem;
+}
+.relevant h2{
+    width: 80%;
+    height: 2rem;
+    line-height: 2rem;
+    border-left: .2rem solid #05a73c;
+    text-indent: 1rem;
+    color: #000;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+.relevant_video{
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    display: -webkit-box;
+}
+.relevant_video dd{
+    width: 50%;
+    height: auto;
+}
+.relevant_video dd img{
+    width: 100%;
+    height: auto;
+}
+.relevant_video dt{
+    width: 45%;
+    margin-left: 5%;
+}
+.in_play{
+    color: #05a73c;
+    margin: .5rem 0;
+    display: none;
+}
+.video_title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: .3rem 0;
+}
+.act_role{
+    font-size: 1rem;
+    color: #666;
+    margin: .5rem 0;
+}
+.Other{
+    width: 100%;
+    height: auto;
+    font-size: .8rem;
+    display: -webkit-box;
+}
+.Other span{
+    -webkit-box-flex:1;
+    display: block;
+    color: #999;
+}
+.Other span:nth-child(1){
+    background: url(../img/eye.png) no-repeat left center;
+    background-size: 1.3rem .8rem;
+    text-indent: 1.5rem;
+}
+.headelookin{
+    display: none;
+}
+.elookin{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8) url(../img/logo.png)no-repeat 5% center;
+    background-size: 7rem auto;
+    z-index: 999;
+}
+.elookin a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.download{
+    width: 30%;
+    height: 2rem;
+    border: 1px solid #44c635;
+    border-radius: 5px;
+    line-height: 2rem;
+    color: #44c635;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    margin-top: -1rem;
+}
+.header{
+    width: 100%;
+    height: 15rem;
+    padding: 2rem 0 7.5rem;
+    position: relative;
+}
+.head_bg{
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.HeadPortrait{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin: 2rem auto;
+    border: .4rem solid #fff;
+    overflow: hidden;
+    -webkit-box-shadow:0 0 20px #01effe; 
+    -moz-box-shadow:0 0 20px #01effe; 
+    box-shadow:0 0 20px #01effe;
+    animation: indistinct 2s ease-in-out infinite;
+    -moz-animation: indistinct 2s ease-in-out infinite; /* Firefox */
+    -webkit-animation: indistinct 2s ease-in-out infinite;  /* Safari 和 Chrome */
+    -o-animation: indistinct 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes indistinct{
+    0%{
+       box-shadow:0 0 30px #01effe; 
+    }
+    50%{
+        box-shadow:0 0 0px #01effe; 
+    }
+    100%{
+       box-shadow:0 0 30px #01effe; 
+    }
+}
+@-moz-keyframes indistinct{
+    0%{
+       box-shadow:0 0 30px #01effe; 
+    }
+    50%{
+        box-shadow:0 0 0px #01effe; 
+    }
+    100%{
+       box-shadow:0 0 30px #01effe; 
+    }
+}
+@-o-keyframes indistinct{
+    0%{
+       box-shadow:0 0 30px #01effe; 
+    }
+    50%{
+        box-shadow:0 0 0px #01effe; 
+    }
+    100%{
+       box-shadow:0 0 30px #01effe; 
+    }
+}
+@keyframes indistinct{
+    0%{
+       box-shadow:0 0 30px #01effe; 
+    }
+    50%{
+        box-shadow:0 0 0px #01effe; 
+    }
+    100%{
+       box-shadow:0 0 30px #01effe; 
+    }
+}
+
+.HeadPortrait img{
+    width: 100%;
+    height: 100%;
+}
+.material{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+.monicker{
+    margin: .5rem 0;
+}
+.Occupation{
+    color: #999;
+}
+.Origin{
+    width: 90%;
+    height: 0;
+    margin: 1rem auto;
+    color: #999;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    overflow: hidden;
+    -moz-transition: width .8s; /* Firefox 4 */
+    -webkit-transition: width .8s; /* Safari 和 Chrome */
+    -o-transition: width .8s; /* Opera */
+}
+.Maycomment{
+    background: url(../img/click-comment.png)no-repeat left center;
+    background-size: contain;
+}
+
+.allcomment{
+    width: 100%;
+    height: auto;
+    display: none;
+    padding-bottom: 5rem;
+}
+.allcomment h2{
+    width: 80%;
+    height: 2rem;
+    line-height: 2rem;
+    border-left: .2rem solid #05a73c;
+    text-indent: 1rem;
+    color: #000;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+.discuss{
+    width: 90%;
+    height: auto;
+    margin: 1rem auto 0;
+    display: -webkit-box;
+}
+.discuss dd{
+    width: 10%;
+    height: auto;
+}
+.headBox{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.headBox img{
+    width: 100%;
+    height: 100%;
+}
+.discuss dt{
+    width: 85%;
+    height: auto;
+    margin-left: 5%;
+    /* padding-bottom: 1rem; */
+}
+.user_info{
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    justify-content: space-between;
+    color: #333;
+}
+.user_info span:nth-child(2){
+    padding-left: 1.5rem;
+    background: url(../img/comment-love.png) no-repeat left top;
+    background-size: 1.2rem 1.2rem;
+}
+.comment_likes{
+    padding-left: 1.5rem;
+    background: url(../img/click-comment-love.png) no-repeat left top!important;
+    background-size: 1.2rem 1.2rem!important;
+}
+.user_info span i{
+    list-style: none;
+    display: block;
+}
+.user_info span i:nth-child(2){
+    color: #666;
+    margin: .5rem 0;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin: .5rem 0;
+}
+.Reply{
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    display: -webkit-box;
+    background: #f6f6f6;
+    border-radius: 2px;
+    text-indent: .5rem;
+}
+.master{
+    color: #05a73c;
+}
+.Number{
+    padding-right: 1.5rem;
+    margin-left: .5rem;
+    display: block;
+    background: url(../img/intro-dwon.png) no-repeat right center;
+    background-size: 1rem 1rem;
+}
+.CommentRelated{
+    width: 100%;
+    height: auto;
+}
+.OtherReplies{
+    background: #f6f6f6;
+}
+.hotcomment{
+    padding-bottom: 1rem;
+}
+.allcomment h3{
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.allcomment h3 span{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    background: url(../img/close.jpg) no-repeat center center;
+    background-size: 2rem 2rem;
+    display: block;
+
+}
+.OtherReplies dl{
+    padding: 1rem 0;
+}
+.Netfriend{
+    color: #05a73c;
+}
+.reversion{
+    width: 98%;
+    height: auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: .3rem 1%;
+}
+.WriteReviews{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+    display: none;
+}
+.inputBox{
+    width: 90%;
+    height: 3rem;
+    line-height: 3rem;
+    margin:.5rem auto 0;
+    background: #f6f6f6;
+    border-radius: 20px;
+    display: -webkit-box;
+}
+.inputBox span{
+    width: 10%;
+    height: 100%;
+    display: block;
+    background: url(../img/write.png)no-repeat center center;
+    background-size: 1.2rem 1.2rem;
+}
+.write{
+    width: 90%;
+    height: 100%;
+    border:none;
+    outline: none;
+    background: none;
+    display: block;
+}
+.empty{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    display: none;
+}
+.imgBox{
+    width:15%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.imgBox img{
+    width: 100%;
+    height: auto;
+}
